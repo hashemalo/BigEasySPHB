@@ -1,0 +1,107 @@
+{
+
+	"name" : "Big Easy V2.1 Taller Big Posts",
+
+	"width" : 600,
+
+	"height" : 294,
+
+	"bg" : { "type" : "grass", "width" : 550, "height" : 264, "kickOffRadius" : 80 },
+
+	"vertexes" : [
+		/* 0 */ { "x" : 549, "y" : -104.5, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		/* 1 */ { "x" : 551, "y" : 104.5, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		/* 2 */ { "x" : 580, "y" : -80.3, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		/* 3 */ { "x" : 580, "y" : 80.3, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		/* 4 */ { "x" : -550, "y" : -104.5, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		/* 5 */ { "x" : -551, "y" : 104.5, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		/* 6 */ { "x" : -580, "y" : -80.3, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		/* 7 */ { "x" : -580, "y" : 80.3, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		/* 8 */ { "x" : 0, "y" : -294, "bCoef" : 0.1, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ] },
+		/* 9 */ { "x" : 0, "y" : -80, "bCoef" : 0.1, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ] },
+		/* 10 */ { "x" : 0, "y" : 80, "bCoef" : 0.1, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ] },
+		/* 11 */ { "x" : 0, "y" : 294, "bCoef" : 0.1, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ] },
+		/* 12 */ { "x" : -550, "y" : -264, "cMask" : [ ] },
+		/* 13 */ { "x" : 550, "y" : -264, "cMask" : [ ] },
+		/* 14 */ { "x" : 550, "y" : -104.5, "cMask" : [ ] },
+		/* 15 */ { "x" : 550, "y" : 104.5, "cMask" : [ ] },
+		/* 16 */ { "x" : 550, "y" : 264, "cMask" : [ ] },
+		/* 17 */ { "x" : -550, "y" : 264, "cMask" : [ ] },
+		/* 18 */ { "x" : -550, "y" : 104.5, "cMask" : [ ] },
+		/* 19 */ { "x" : -550, "y" : -104.5, "cMask" : [ ] }
+
+	],
+
+	"segments" : [
+		{ "v0" : 0, "v1" : 2, "curve" : 89.99999999999999, "bCoef" : 0.1, "cMask" : ["ball" ], "curveF" : 1.0000000000000002 },
+		{ "v0" : 3, "v1" : 2, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		{ "v0" : 3, "v1" : 1, "curve" : 89.99999999999999, "bCoef" : 0.1, "cMask" : ["ball" ], "curveF" : 1.0000000000000002 },
+		{ "v0" : 6, "v1" : 4, "curve" : 89.99999999999999, "bCoef" : 0.1, "cMask" : ["ball" ], "curveF" : 1.0000000000000002 },
+		{ "v0" : 7, "v1" : 6, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		{ "v0" : 5, "v1" : 7, "curve" : 89.99999999999999, "bCoef" : 0.1, "cMask" : ["ball" ], "curveF" : 1.0000000000000002 },
+		{ "v0" : 8, "v1" : 9, "vis" : false, "bCoef" : 0.1, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ] },
+		{ "v0" : 10, "v1" : 11, "vis" : false, "bCoef" : 0.1, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ] },
+		{ "v0" : 9, "v1" : 10, "curve" : 180, "vis" : false, "bCoef" : 0.1, "cMask" : ["red","blue" ], "cGroup" : ["redKO" ], "curveF" : 6.123233995736766e-17 },
+		{ "v0" : 10, "v1" : 9, "curve" : 180, "vis" : false, "bCoef" : 0.1, "cMask" : ["red","blue" ], "cGroup" : ["blueKO" ], "curveF" : 6.123233995736766e-17 },
+		{ "v0" : 13, "v1" : 14, "vis" : false, "cMask" : ["ball" ] },
+		{ "v0" : 15, "v1" : 16, "vis" : false, "cMask" : ["ball" ] },
+		{ "v0" : 17, "v1" : 18, "vis" : false, "cMask" : ["ball" ] },
+		{ "v0" : 19, "v1" : 12, "vis" : false, "cMask" : ["ball" ] }
+
+	],
+
+	"planes" : [
+		{ "normal" : [0,1 ], "dist" : -294, "bCoef" : 0 },
+		{ "normal" : [0,-1 ], "dist" : -294, "bCoef" : 0 },
+		{ "normal" : [1,0 ], "dist" : -600, "bCoef" : 0 },
+		{ "normal" : [-1,0 ], "dist" : -600, "bCoef" : 0 },
+		{ "normal" : [0,1 ], "dist" : -264, "cMask" : ["ball" ] },
+		{ "normal" : [0,-1 ], "dist" : -264, "cMask" : ["ball" ] }
+
+	],
+
+	"goals" : [
+		{ "p0" : [550,-104.5 ], "p1" : [550,104.5 ], "team" : "blue", "_selected" : true },
+		{ "p0" : [-550,-104.5 ], "p1" : [-550,104.5 ], "team" : "red" }
+
+	],
+
+	"discs" : [
+		{ "radius" : 8, "invMass" : 0, "pos" : [550,-104.5 ], "color" : "CCCCFF" },
+		{ "radius" : 8, "invMass" : 0, "pos" : [550,104.5 ], "color" : "CCCCFF" },
+		{ "radius" : 8, "invMass" : 0, "pos" : [-550,-104.5 ], "color" : "FFCCCC" },
+		{ "radius" : 8, "invMass" : 0, "pos" : [-550,104.5 ], "color" : "FFCCCC" }
+
+	],
+
+	"playerPhysics" : {
+		
+
+	},
+
+	"ballPhysics" : {
+        "radius": 9
+        },
+
+	"spawnDistance" : 400,
+
+	"traits" : {
+		
+
+	},
+
+	"joints" : [
+		
+
+	],
+
+	"redSpawnPoints" : [
+		
+
+	],
+
+	"blueSpawnPoints" : [
+		
+
+	]
+}
